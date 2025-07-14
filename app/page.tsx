@@ -199,14 +199,14 @@ export default function GlobalWebsite() {
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          {/* Replaced responsive Streamable embed with fixed-size iframe as provided */}
-          <iframe
-            allow="fullscreen"
-            allowFullScreen
-            height="720"
-            src="https://streamable.com/e/ql0maz?nocontrols=1"
-            width="1280"
-            style={{border:'none'}}
+          {/* Replaced video background with YouTube embed */}
+          <video
+            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
+            src="https://jmp.sh/m17F1rcm"
+            autoPlay
+            muted
+            loop
+            playsInline
           />
         </div>
 
