@@ -199,10 +199,10 @@ export default function GlobalWebsite() {
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          {/* Replaced YouTube embed with Wistia embed */}
+          {/* Replaced background with Wistia embed */}
           <iframe
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
-            src="https://fast.wistia.net/embed/iframe/3dr55q54vy?seo=true&videoFoam=true&autoplay=1&muted=1&loop=1"
+            src="https://fast.wistia.net/embed/iframe/3dr55q54vy?seo=true&videoFoam=true&autoplay=1&muted=1&controls=0&loop=1"
             title="KandyBTL Background Video"
             frameBorder="0"
             allow="autoplay; encrypted-media"
