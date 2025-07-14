@@ -201,13 +201,13 @@ export default function GlobalWebsite() {
         <div className="absolute inset-0 w-full h-full">
           {/* Replaced video background with YouTube embed */}
           <iframe
-            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             src="https://www.youtube.com/embed/RQrqrVFEo5w?autoplay=1&mute=1&controls=0&loop=1&playlist=RQrqrVFEo5w&modestbranding=1&showinfo=0&rel=0"
             title="KandyBTL Background Video"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
-            style={{ pointerEvents: 'none' }}
+            style={{objectFit: 'cover', width: '100%', height: '100%', pointerEvents: 'none'}} 
           />
         </div>
 
