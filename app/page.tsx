@@ -202,7 +202,7 @@ export default function GlobalWebsite() {
           <video
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
             /*Hero Section Background Video */
-            src="public/0703 (1).mp4"
+            src="/0703 (1).mp4"
             autoPlay
             muted
             loop
