@@ -199,17 +199,15 @@ export default function GlobalWebsite() {
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          {/* Replaced Streamable embed with provided responsive embed markup */}
-          <div style={{position:'relative', width:'100%', height:'0px', paddingBottom:'56.250%'}}>
-            <iframe
-              allow="fullscreen"
-              allowFullScreen
-              height="100%"
-              src="https://streamable.com/e/ql0maz?nocontrols=1"
-              width="100%"
-              style={{border:'none', width:'100%', height:'100%', position:'absolute', left:0, top:0, overflow:'hidden'}}
-            />
-          </div>
+          {/* Replaced responsive Streamable embed with fixed-size iframe as provided */}
+          <iframe
+            allow="fullscreen"
+            allowFullScreen
+            height="720"
+            src="https://streamable.com/e/ql0maz?nocontrols=1"
+            width="1280"
+            style={{border:'none'}}
+          />
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 animate-gradient-shift"></div>
