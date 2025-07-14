@@ -199,15 +199,14 @@ export default function GlobalWebsite() {
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          {/* Replaced background with Wistia embed */}
-          <iframe
+          <video
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
-            src="https://fast.wistia.net/embed/iframe/3dr55q54vy?seo=true&videoFoam=true&autoplay=1&muted=1&controls=0&loop=1"
-            title="KandyBTL Background Video"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            style={{ pointerEvents: 'none' }}
+            /*Hero Section Background Video */
+            src="/assets/0703 (1).mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
           />
         </div>
 
