@@ -199,16 +199,17 @@ export default function GlobalWebsite() {
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          {/* Replaced YouTube embed with Streamable embed */}
-          <iframe
-            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
-            src="https://streamable.com/e/ql0maz?autoplay=1&muted=1&loop=1"
-            title="KandyBTL Background Video"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            style={{ pointerEvents: 'none' }}
-          />
+          {/* Replaced Streamable embed with provided responsive embed markup */}
+          <div style={{position:'relative', width:'100%', height:'0px', paddingBottom:'56.250%'}}>
+            <iframe
+              allow="fullscreen"
+              allowFullScreen
+              height="100%"
+              src="https://streamable.com/e/ql0maz?nocontrols=1"
+              width="100%"
+              style={{border:'none', width:'100%', height:'100%', position:'absolute', left:0, top:0, overflow:'hidden'}}
+            />
+          </div>
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 animate-gradient-shift"></div>
