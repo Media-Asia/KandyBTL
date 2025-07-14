@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { Facebook, Instagram, Linkedin} from "lucide-react"
+import { Facebook, Instagram, Linkedin } from "lucide-react"
 import { FaXTwitter } from "react-icons/fa6";
 import { Button } from "@/components/ui/button"
 import Navbar from "@/components/ui/navbar"
@@ -11,26 +11,7 @@ import "@/app/hover-zoom-tilt.css"
 export default function GlobalWebsite() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [scrolled, setScrolled] = useState(false)
-  const [showLoader, setShowLoader] = useState(true)
-  const [loaderFade, setLoaderFade] = useState(false)
   const heroRef = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if (window.sessionStorage.getItem('kandybtl-home-loaded')) {
-        setShowLoader(false)
-      } else {
-        setShowLoader(true)
-        setTimeout(() => {
-          setLoaderFade(true)
-          setTimeout(() => {
-            setShowLoader(false)
-            window.sessionStorage.setItem('kandybtl-home-loaded', '1')
-          }, 500)
-        }, 2000)
-      }
-    }
-  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -213,20 +194,6 @@ export default function GlobalWebsite() {
     }
   }
 
-  /*Loding Screen */
-  if (showLoader) {
-    return (
-      <div className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-gradient-to-br from-blue-700 via-purple-800 to-blue-900 transition-opacity duration-500 ${loaderFade ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <img
-          src="https://i.postimg.cc/7662YgyG/432389509-122094905402252660-5301846214880630571-n.jpg"
-          alt="KandyBTL Loader"
-          className="w-32 h-32 rounded-full shadow-2xl animate-spin-slow mb-6 border-4 border-white"
-        />
-        <span className="text-white text-4xl font-extrabold tracking-widest animate-fade-in-up" style={{letterSpacing: '0.2em'}}>KandyBTL</span>
-      </div>
-    )
-  }
-
   return (
     <div className="min-h-screen bg-white overflow-x-hidden animate-fade-in">
       {/* Hero Section */}
@@ -249,7 +216,7 @@ export default function GlobalWebsite() {
           <div className="relative">
             <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full scale-150 animate-pulse-glow"></div>
 
-            <h1 className="relative font-bold mb-4 animate-text-reveal text-white text-4xl custom-sm:text-6xl custom-md:text-8xl custom-lg:text-[8rem] custom-xl:text-[10rem] custom-2xl:text-[12rem] leading-tight font-montserrat" style={{fontSize: 'clamp(2.5rem, 8vw, 8rem)'}}>
+            <h1 className="relative font-bold mb-4 animate-text-reveal text-white text-4xl custom-sm:text-6xl custom-md:text-8xl custom-lg:text-[8rem] custom-xl:text-[10rem] custom-2xl:text-[12rem] leading-tight font-montserrat" style={{ fontSize: 'clamp(2.5rem, 8vw, 8rem)' }}>
               kandyBTL
             </h1>
           </div>
@@ -290,7 +257,7 @@ export default function GlobalWebsite() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex items-center justify-center mb-16 relative z-30">
-            <h2 className="font-extrabold text-transparent stroke-2 stroke-white/20 leading-none select-text selection:text-white selection:bg-blue-500 text-4xl custom-sm:text-6xl custom-md:text-8xl custom-lg:text-[8rem] custom-xl:text-[10rem] custom-2xl:text-[12rem]" style={{fontSize: 'clamp(2.5rem, 8vw, 8rem)'}}>
+            <h2 className="font-extrabold text-transparent stroke-2 stroke-white/20 leading-none select-text selection:text-white selection:bg-blue-500 text-4xl custom-sm:text-6xl custom-md:text-8xl custom-lg:text-[8rem] custom-xl:text-[10rem] custom-2xl:text-[12rem]" style={{ fontSize: 'clamp(2.5rem, 8vw, 8rem)' }}>
               what's new
             </h2>
           </div>
@@ -391,7 +358,7 @@ export default function GlobalWebsite() {
         <div className="container mx-auto px-6 scroll-animate animate-fade-in-up">
           <div className="flex flex-col custom-sm:flex-row items-center custom-sm:justify-between relative gap-8 custom-sm:gap-0">
             <div className="flex-shrink-0 pr-0 custom-sm:pr-8 relative z-20 self-center mb-8 custom-sm:mb-0 animate-fade-in-up">
-              <div className="text-2xl custom-sm:text-4xl custom-md:text-5xl custom-lg:text-6xl font-extrabold text-transparent stroke-2 stroke-white/20 transform custom-sm:-rotate-90 origin-center select-text selection:text-white selection:bg-blue-500 whitespace-nowrap hover:stroke-white/40 transition-all duration-500" style={{fontSize: 'clamp(2rem, 6vw, 6rem)'}}>
+              <div className="text-2xl custom-sm:text-4xl custom-md:text-5xl custom-lg:text-6xl font-extrabold text-transparent stroke-2 stroke-white/20 transform custom-sm:-rotate-90 origin-center select-text selection:text-white selection:bg-blue-500 whitespace-nowrap hover:stroke-white/40 transition-all duration-500" style={{ fontSize: 'clamp(2rem, 6vw, 6rem)' }}>
                 Projects
               </div>
             </div>
@@ -604,7 +571,7 @@ export default function GlobalWebsite() {
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
