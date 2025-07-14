@@ -202,7 +202,7 @@ export default function GlobalWebsite() {
           <video
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 scale-110"
             /*Hero Section Background Video */
-            src="https://github.com/Media-Asia/KandyBTL/blob/b40da513178ae66e93dd28a060e1c2b72b3a7fdd/app/0703%20(1).mp4"
+            src="/0703.mp4"
             autoPlay
             muted
             loop
