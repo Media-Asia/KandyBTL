@@ -40,15 +40,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="twitter:description" content="KandyBTL is the leading outdoor advertising agency in Kandy, Sri Lanka. We offer billboards, bus shelter ads, roundabout branding, and more." />
         <meta name="twitter:image" content="/public/placeholder-logo.png" />
         <link rel="icon" href="/placeholder-logo.png" type="image/png" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWCEP55F84"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-HWCEP55F84');
-      </script>
       </Head>
       <body>
         {children}
